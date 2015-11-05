@@ -1,0 +1,36 @@
+<div id="user-page">
+    <div id="main-container" class="container">
+     <div class="row">
+      <% if logged_in? %>
+        <div class="logout">
+          <%= button_to 'Logout', logout_path, :method => :delete %>
+        </div>
+      <% end %>
+       <div id="sidebar" class="col-xs-3">
+         <!-- sidebar content -->
+          <div class="form">
+            <%= form_for @user, :html => {:class => "container"} do |f| %>
+            <h1>Hello <%= @user.username %>!</h1>
+            <p>
+              Welcome to your drum machine!
+            </p>
+       </div>
+       <div id="content" class="col-xs-9">
+         <button type="button" class="btn">try it</button>
+         <button class="btn btn-default dropdown-toggle" type="button" id="drumMenu1" data-toggle="dropdown" aria-haspoup="true" aria-expanded="true">
+           Dropdown
+           <span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu" aria-labelledby="drumMenu1">
+           <li value="option1">option1</li>
+           <li><a href="#">option2</a></li>
+           <li><a href="#">option3</a></li>
+         </ul>
+
+       </div>
+     </div>
+   </div>
+    <% end %>
+
+  </div>
+</div>
