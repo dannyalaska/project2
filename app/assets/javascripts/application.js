@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
+$(document).ready(function() {
+
+    $("#snare").click(function() {
+
+        alert("hello");
+
+    });
+
+    }
+    );

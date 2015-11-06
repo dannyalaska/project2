@@ -94,5 +94,5 @@ drums_bank = {
   },
   {  :name=>"kick swedish",
     :sound_url=>"http://www.freesound.org/data/previews/264/264601_3797507-lq.mp3"
-  },
-  
+  }
+}
