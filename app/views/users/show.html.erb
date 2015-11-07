@@ -15,8 +15,8 @@
               Welcome to your drum machine!
             </p>
        </div>
-       <div id="snare" class="col-xs-9">
-         <button type="button" class="btn" id="snare" value=>SNARE
+       <div id="snare" class="col-s-9">
+         <button type="button" class="btn" id="snare">
          <select>
            <%= options_from_collection_for_select(Drum.all, 'sound_url', 'name') %>
          </select>
