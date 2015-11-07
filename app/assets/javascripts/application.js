@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     $("#snare").click(function() {
 
-        alert("hello");
+        ;
 
     });
 

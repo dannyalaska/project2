@@ -16,17 +16,11 @@
             </p>
        </div>
        <div id="content" class="col-xs-9">
-         <button type="button" class="btn" id="snare">try it</button>
-         <button class="btn btn-default dropdown-toggle" type="button" id="drumMenu1" data-toggle="dropdown" aria-haspoup="true" aria-expanded="true">
-           Dropdown
-           <span class="caret"></span>
+         <button type="button" class="btn" id="snare" value=>SNARE
+         <select>
+           <%= options_from_collection_for_select(Drum.all, 'sound_url', 'name') %>
+         </select>
          </button>
-         <ul class="dropdown-menu" aria-labelledby="drumMenu1">
-           <li value="option1">option1</li>
-           <li><a href="#">option2</a></li>
-           <li><a href="#">option3</a></li>
-         </ul>
-
        </div>
      </div>
    </div>
