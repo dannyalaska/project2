@@ -15,12 +15,11 @@
 //= require bootstrap-sprockets
 //= require_tree .
 $(document).ready(function() {
-
-    $("#snare").click(function() {
-
-        ;
-
+    $("#snare").click(drumstick);
     });
 
+var drumstick = function(){
+      var hit = document.getElementById("snares").value;
+      play = new Audio(hit);
+      play.play()
     }
-    );

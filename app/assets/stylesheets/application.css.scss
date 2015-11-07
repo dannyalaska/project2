@@ -1,2 +1,37 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#main-container{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.welcome {
+  margin: 15px;
+  margin-left: 80%;
+  position: absolute;
+  float: right;
+  width: 200px;
+  border-style: ridge;
+}
+
+#buttons1 {
+  margin: 10px;
+  height: 200px;
+  width: 400px;
+}
+.btn {
+  background-color: rgb(238, 167, 60);
+  border-color: rgb(198, 150, 44);
+  border-style: outset;
+  border-width: 8px;
+  height: 100px;
+  width: 100px;
+  display:inline-grid;
+  position: relative;
+  margin: 15px;
+}
+select {
+  background-color: rgb(238, 221, 107);
+  width: 100px;
+}

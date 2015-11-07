@@ -1,30 +1,42 @@
 <div id="user-page">
     <div id="main-container" class="container">
-     <div class="row">
-      <% if logged_in? %>
-        <div class="logout">
-          <%= button_to 'Logout', logout_path, :method => :delete %>
-        </div>
-      <% end %>
-       <div id="sidebar" class="col-xs-3">
-         <!-- sidebar content -->
-          <div class="form">
-            <%= form_for @user, :html => {:class => "container"} do |f| %>
+       <div id="sidebar" class="col-s-3">
+          <div class="welcome">
             <h1>Hello <%= @user.username %>!</h1>
-            <p>
-              Welcome to your drum machine!
-            </p>
-       </div>
-       <div id="snare" class="col-s-9">
-         <button type="button" class="btn" id="snare">SNARE
-         <select>
-           <%= options_from_collection_for_select(Drum.all, 'sound_url', 'name') %>
-         </select>
-         </button>
+            <p>Welcome to your drum machine</p>
        </div>
      </div>
+       <div id="buttons1" class="col-s-9">
+
+         <form>
+           <button type="button" class="btn" id="snare" value= >SNARE</button>
+         <select id ="snares" onchange='drumstick()'><%= options_from_collection_for_select(Drum.all, 'sound_url', 'name') %></select>
+       </form>
+       <form>
+         <button type="button" class="btn" id="kick">KICK</button>
+         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Kick.all, 'sound_url', 'name') %></select>
+       </form>
+     <form>
+         <button type="button" class="btn" id="hat">HI-HATS</button>
+         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Hat.all, 'sound_url', 'name') %></select>
+
+       </form>
+       <form>
+         <button type="button" class="btn" id="tom1">TOM 1</button>
+         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Tom.all, 'sound_url', 'name') %></select>
+       </form>
+       <form>
+         <button type="button" class="btn" id="tom2">TOM 2</button>
+         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Tom.all, 'sound_url', 'name') %></select>
+       </form>
+       <form>
+         <button type="button" class="btn" id="bell">BELL</button>
+         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Bell.all, 'sound_url', 'name') %></select>
+       </form>
+       </div>
+       <noscript><input type="submit" value="Submit"></noscript>
    </div>
-    <% end %>
+
 
   </div>
 </div>

@@ -1,0 +1,2 @@
+class BellsController < ApplicationController
+end
