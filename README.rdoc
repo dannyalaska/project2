@@ -4,7 +4,7 @@
 ===The soundbank and seed file was all pulled from http://www.freesound.org and their API. 
 ===I used jQuery to add click events and keypress events.
 
-===Screenshots of user stories HERE[https://github.com/dannyalaska/project2/tree/master/screenshots]===
+===Screenshots of user stories HERE[https://github.com/dannyalaska/project2/tree/master/screenshots]
 
 ==Notes after completion:
 -----------------------
