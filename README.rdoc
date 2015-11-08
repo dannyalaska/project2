@@ -1,6 +1,8 @@
 == This is my second WDI Project. 
 
 ===It is a beat pad drum machine built on rails with a little bit of bootstrap added in. 
+===The soundbank and seed file was all pulled from http://www.freesound.org and their API. 
+===I used jQuery to add click events and keypress events.
 
 ===Screenshots of user stories HERE[https://github.com/dannyalaska/project2/tree/master/screenshots]===
 
