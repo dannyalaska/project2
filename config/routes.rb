@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root to: "sessions#new"
 
   get 'sessions/new'
 
@@ -14,34 +15,12 @@ Rails.application.routes.draw do
   get 'login' => "sessions#new"
   post 'login' => "sessions#create"
   delete 'logout' => "sessions#destroy"
-  root to: "sessions#new"
 
   resources :users
 
-  resources :kits do
-    resources :drums
-    resources :kicks
-  end
 
-  get 'kits/new'
 
-  get 'kits/create'
 
-  get 'kicks/index'
-
-  get 'kicks/new'
-
-  get 'kicks/create'
-
-  get 'kicks/show'
-
-  get 'drums/index'
-
-  get 'drums/new'
-
-  get 'drums/create'
-
-  get 'drums/show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

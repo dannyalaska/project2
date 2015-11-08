@@ -46,6 +46,15 @@ $(document).keypress(function(event){
       if(keycode == '32'){
           ding();
       };
+      if(keycode == '98'){
+          ping();
+      };
+      if(keycode == '118'){
+          blast();
+      };
+      if(keycode == '112'){
+          start();
+      };
 
   });
 

@@ -10,6 +10,10 @@ Kick.destroy_all
 Kit.destroy_all
 Hat.destroy_all
 Tom.destroy_all
+Bell.destroy_all
+Laser.destroy_all
+Ride.destroy_all
+Synth.destroy_all
 
   Kit.create
 
