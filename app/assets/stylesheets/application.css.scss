@@ -52,7 +52,6 @@ body {
   display: block;
   position: relative;
   margin: 5px;
-  margin-left:10px;
   font-weight: bold;
   color: rgb(122, 55, 0);
   border-radius: 12px;
@@ -64,4 +63,11 @@ select {
   background-color: rgb(238, 221, 107);
   width: 150px;
   margin-left: 10px;
+}
+
+.form {
+  margin: 35px;
+  width: 100px;
+  position: absolute;
+  display: block;
 }
