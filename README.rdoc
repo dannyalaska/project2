@@ -2,3 +2,18 @@
 
 ===It is a beat pad drum machine built on rails with a little bit of bootstrap added in. 
 
+===Screenshots of user stories HERE[https://github.com/dannyalaska/project2/tree/master/screenshots]===
+
+==Notes after completion:
+-----------------------
+1. I finished almost all of my user stories. I couldn't figure out how to save a specific drum setup after a user selects their sounds from the dropdowns. But I did get sweet lighting effects and customizable kits in that each setup can be completely different. 
+2. I could have made my javascript a little more DRY but it was difficult to figure out how with they keypresses and clicks all triggering similar but different functions. 
+3. I can't get heroku to work. I don't know why it can work on my local server but crash on heroku.  I'm not really a fan of the fact that this is part of the grading and criteria for this project since we dedicated little if any time at all to how to do it.  
+4. I am very pleased with how this app came out. It was a challenge from the start but a fun challenge.  I don't have any major bugs on my page and the drum machine is fully functional. 
+
+====If I could change things: 
+1. I would add in the ability to record sessions.
+2. I would give the user the ability to add in their own personalized sounds and save them.  This was on my reach list and I simply didn't get to it. 
+3. I would pick out more sounds or simply find a way to load the api faster on the page.  
+4. I wish I knew more front-end styling stuff because I feel like that's where I'm still kind of weak. 
+
