@@ -1,4 +1,4 @@
-class Bell < ActiveRecord::Base
+class Synth < ActiveRecord::Base
   belongs_to :drums
 
 

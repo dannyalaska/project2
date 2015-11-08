@@ -1,4 +1,4 @@
-class Bell < ActiveRecord::Base
+class Laser < ActiveRecord::Base
   belongs_to :drums
 
 

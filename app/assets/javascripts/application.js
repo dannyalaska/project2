@@ -15,11 +15,90 @@
 //= require bootstrap-sprockets
 //= require_tree .
 $(document).ready(function() {
-    $("#snare").click(drumstick);
-    });
+  $("#snare").click(drumstick);
+  $("#kick").click(pedal);
+  $("#hat").click(tiss);
+  $("#tom").click(boom);
+  $("#tom2").click(boom2);
+  $("#bell").click(ding);
+  $("#laser").click(blast);
+  $("#ride").click(ping);
+  $("#synth").click(start);
+});
+
+$(document).keypress(function(event){
+      var keycode = (event.keyCode ? event.keyCode : event.which);
+      if(keycode == '97'){
+          drumstick();
+      };
+      if(keycode == '115'){
+          pedal();
+      };
+      if(keycode == '108'|| keycode == '107'){
+          tiss();
+      };
+      if(keycode == '116' || keycode == '121' ){
+          boom();
+      };
+      if(keycode == '103' || keycode == '104' ){
+          boom2();
+      };
+      if(keycode == '32'){
+          ding();
+      };
+
+  });
 
 var drumstick = function(){
-      var hit = document.getElementById("snares").value;
-      play = new Audio(hit);
-      play.play()
-    }
+  var hit = document.getElementById("snares").value;
+  play = new Audio(hit);
+  play.play()
+};
+
+var pedal = function(){
+  var hit = document.getElementById("kicks").value;
+  play = new Audio(hit);
+  play.play()
+};
+
+var tiss = function(){
+  var hit = document.getElementById("hats").value;
+  play = new Audio (hit);
+  play.play()
+};
+
+var boom = function(){
+  var hit = document.getElementById("toms").value;
+  play = new Audio(hit);
+  play.play()
+};
+
+var boom2 = function(){
+  var hit = document.getElementById("toms2").value;
+  play = new Audio(hit);
+  play.play()
+};
+
+var ding = function(){
+  var hit = document.getElementById("bells").value;
+  play = new Audio(hit);
+  play.play()
+};
+
+var ping = function(){
+  var hit = document.getElementById("rides").value;
+  play = new Audio(hit);
+  play.play()
+};
+
+var blast = function(){
+  var hit = document.getElementById("lasers").value;
+  play = new Audio(hit);
+  play.play()
+};
+
+var start = function(){
+  var hit = document.getElementById("synths").value;
+  play = new Audio(hit);
+  play.play()
+};

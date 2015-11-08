@@ -179,3 +179,68 @@ Bell.create([{
    :sound_url=>"http://www.freesound.org/data/previews/87/87020_377011-lq.mp3"},
    {:name=>"BELL 5",
    :sound_url=>"http://www.freesound.org/data/previews/83/83541_377011-lq.mp3"}])
+
+
+Laser.create([
+   {:name=>"Laser Shot Water",
+     :sound_url=>"http://www.freesound.org/data/previews/151/151025_1838182-lq.mp3"},
+   {:name=>"Laser Shot Small 1",
+     :sound_url=>"http://www.freesound.org/data/previews/151/151024_1838182-lq.mp3"},
+   {:name=>"Laser Shot Small 2",
+     :sound_url=>"http://www.freesound.org/data/previews/151/151023_1838182-lq.mp3"},
+   {:name=>"Laser Shot Short",
+     :sound_url=>"http://www.freesound.org/data/previews/151/151018_1838182-lq.mp3"},
+   {:name=>"Laser Shot Long",
+     :sound_url=>"http://www.freesound.org/data/previews/151/151021_1838182-lq.mp3"},
+   {:name=>"Laser Shot Big 3",
+     :sound_url=>"http://www.freesound.org/data/previews/151/151017_1838182-lq.mp3"}
+  ])
+
+Ride.create([
+  {:name=>"ride n1",
+  :sound_url=>"http://www.freesound.org/data/previews/209/209892_3797507-lq.mp3"},
+  {:name=>"ride",
+  :sound_url=>"http://www.freesound.org/data/previews/209/209891_3797507-lq.mp3"},
+  {:name=>"right ride",
+  :sound_url=>"http://www.freesound.org/data/previews/209/209899_3797507-lq.mp3"},
+  {:name=>"ride 13",
+  :sound_url=>"http://www.freesound.org/data/previews/209/209892_3797507-lq.mp3"},
+  {:name=>"ride B 17",
+  :sound_url=>"  http://www.freesound.org/data/previews/209/209897_3797507-lq.mp3"},
+  {:name=>"Synth Ride ",
+  :sound_url=>"http://www.freesound.org/data/previews/209/209894_3797507-lq.mp3"},
+  ])
+
+
+Synth.create([
+     {:name=>"Insomniac Rev",
+     :sound_url=>"http://www.freesound.org/data/previews/261/261209_2297168-lq.mp3"},
+     {:name=>"Insomniac Snyth Loop",
+     :sound_url=>"http://www.freesound.org/data/previews/261/261208_2297168-lq.mp3"},
+     {:name=>"Floating Synth Melody",
+     :sound_url=>"http://www.freesound.org/data/previews/231/231578_2594536-lq.mp3"},
+     {:name=>"Requiem 3",
+     :sound_url=>"http://www.freesound.org/data/previews/136/136351_2088386-lq.mp3"},
+     {:name=>"Legend A",
+     :sound_url=>"http://www.freesound.org/data/previews/136/136363_2088386-lq.mp3"},
+     {:name=>"Xenus 2",
+     :sound_url=>"http://www.freesound.org/data/previews/136/136322_2088386-lq.mp3"},
+     {:name=>"Xenus 1",
+     :sound_url=>"http://www.freesound.org/data/previews/136/136321_2088386-lq.mp3"},
+     {:name=>"Ekor 2",
+     :sound_url=>"http://www.freesound.org/data/previews/136/136320_2088386-lq.mp3"},
+     {:name=>"Ekor 3",
+     :sound_url=>"http://www.freesound.org/data/previews/136/136319_2088386-lq.mp3"},
+     {:name=>"Ekor 1",
+     :sound_url=>"http://www.freesound.org/data/previews/136/136315_2088386-lq.mp3"},
+     {:name=>"Synth",
+     :sound_url=>"http://www.freesound.org/data/previews/0/948_801-lq.mp3"},
+     {:name=>"Synthy",
+     :sound_url=>"http://www.freesound.org/data/previews/189/189710_3512972-lq.mp3"},
+     {:name=>"Weeyow Synth",
+     :sound_url=>"http://www.freesound.org/data/previews/167/167389_2522406-lq.mp3"},
+     {:name=>"Syth Synth",
+     :sound_url=>"http://www.freesound.org/data/previews/22/22904_136442-lq.mp3"},
+     {:name=>"Rugrats synth sounds",
+     :sound_url=>"http://www.freesound.org/data/previews/214/214335_3216348-lq.mp3"},
+  ])

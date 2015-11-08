@@ -1,39 +1,58 @@
 <div id="user-page">
-    <div id="main-container" class="container">
+    <div id="drum-machine" class="container">
        <div id="sidebar" class="col-s-3">
           <div class="welcome">
             <h1>Hello <%= @user.username %>!</h1>
             <p>Welcome to your drum machine</p>
+            <% if logged_in? %>
+            <div class="logout">
+              <%= button_to 'Logout', logout_path, :method => :delete %>
+            </div>
+            <% end %>
        </div>
      </div>
        <div id="buttons1" class="col-s-9">
-
          <form>
-           <button type="button" class="btn" id="snare" value= >SNARE</button>
+           <button type="button" class="btn" id="snare" value= >SNARE<br>(a)</button>
          <select id ="snares" onchange='drumstick()'><%= options_from_collection_for_select(Drum.all, 'sound_url', 'name') %></select>
        </form>
        <form>
-         <button type="button" class="btn" id="kick">KICK</button>
-         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Kick.all, 'sound_url', 'name') %></select>
-       </form>
-     <form>
-         <button type="button" class="btn" id="hat">HI-HATS</button>
-         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Hat.all, 'sound_url', 'name') %></select>
-
+         <button type="button" class="btn" id="kick">KICK<br> (s)</button>
+         <select id="kicks" onchange='pedal()'> <%= options_from_collection_for_select(Kick.all, 'sound_url', 'name') %></select>
        </form>
        <form>
-         <button type="button" class="btn" id="tom1">TOM 1</button>
-         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Tom.all, 'sound_url', 'name') %></select>
+         <button type="button" class="btn" id="hat">HI-HATS<br> (k) / (l)</button>
+         <select id="hats" onchange='tiss()'> <%= options_from_collection_for_select(Hat.all, 'sound_url', 'name') %></select>
+       </form>
+     </div>
+     <div id="buttons2" class="col-s-9">
+       <form>
+         <button type="button" class="btn" id="tom">TOM<br>(t) / (y)</button>
+         <select id= "toms" onchange='boom()'> <%= options_from_collection_for_select(Tom.all, 'sound_url', 'name') %></select>
        </form>
        <form>
-         <button type="button" class="btn" id="tom2">TOM 2</button>
-         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Tom.all, 'sound_url', 'name') %></select>
+         <button type="button" class="btn" id="tom2">TOM 2<br>(g) / (h)</button>
+         <select id= "toms2"onchange='boom()'> <%= options_from_collection_for_select(Tom.all, 'sound_url', 'name') %></select>
        </form>
        <form>
-         <button type="button" class="btn" id="bell">BELL</button>
-         <select onchange='this.form.submit()'> <%= options_from_collection_for_select(Bell.all, 'sound_url', 'name') %></select>
+         <button type="button" class="btn" id="bell">BELL<br>(space)</button>
+         <select id="bells" onchange='ding()'> <%= options_from_collection_for_select(Bell.all, 'sound_url', 'name') %></select>
        </form>
        </div>
+       <div id="buttons3" class="col-s-9">
+         <form>
+           <button type="button" class="btn" id="ride">RIDE 2<br></button>
+           <select id= "rides"onchange='ping()'> <%= options_from_collection_for_select(Ride.all, 'sound_url', 'name') %></select>
+         </form>
+         <form>
+           <button type="button" class="btn" id="laser">LASER<br></button>
+           <select id= "lasers" onchange='blast()'> <%= options_from_collection_for_select(Laser.all, 'sound_url', 'name') %></select>
+         </form>
+         <form>
+           <button type="button" class="btn" id="synth">Synth<br></button>
+           <select id="synths" onchange='start()'> <%= options_from_collection_for_select(Synth.all, 'sound_url', 'name') %></select>
+         </form>
+         </div>
        <noscript><input type="submit" value="Submit"></noscript>
    </div>
 
