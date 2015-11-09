@@ -2,7 +2,7 @@
     <div id="sidebar" class="col-s-3">
       <div class="welcome">
         <h1>Hello <%= @user.username.capitalize! %>!</h1><br>
-        <p>Welcome to your drum machine!<br>Click the buttons or the coresponding key to play some sweet sweet tunage.</p>
+        <p>Welcome to your drum machine!<br>Click the buttons or the keyboard to play some sweet sweet tunage.</p>
         <% if logged_in? %>
         <div class="logout">
           <%= button_to 'Logout', logout_path, :method => :delete %>
