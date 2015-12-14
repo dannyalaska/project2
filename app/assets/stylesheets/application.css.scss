@@ -12,9 +12,9 @@ body {
 #drum-machine{
   height: 600px;
   width: 600px;
-  margin: 10px auto;
-  background-color: rgb(44, 41, 47);
-  border: 10px outset rgb(40, 7, 56);
+  margin: 50px auto;
+  background-color: rgba(44, 41, 47, 0.7);
+  border: 10px outset #7B4CFE;
   position: relative;
   border-radius: 12px;
 }
@@ -29,8 +29,8 @@ body {
   position: relative;
   float: left;
   width: 200px;
-  border: 10px outset rgb(180, 125, 4);
-  background-color: rgb(236, 144, 22);
+  border: 10px outset #7B4CFE;
+  background-color: #02A8F3;
   border-radius: 12px;
   text-align: center;
 }
@@ -40,27 +40,28 @@ body {
   height: 100%;
   width: 150px;
   float: left;
+
 }
 
 .btn {
-  background-color: rgb(238, 167, 60);
-  border-color: rgb(198, 150, 44);
+  background-color: #02A8F3;
+  border-color: #717171;
   border-style: outset;
   border-width: 8px;
   height: 150px;
   width: 150px;
   display: block;
   position: relative;
-  margin: 5px;
+  margin: 5px auto;
   font-weight: bold;
-  color: rgb(122, 55, 0);
+  color: black;
   border-radius: 12px;
 }
 .btn:hover{
-  background-color: rgb(255, 195, 106);
+  background-color: #3E50B4;
 }
 select {
-  background-color: rgb(238, 221, 107);
+  background-color: #B5B5B5;
   width: 150px;
   margin-left: 10px;
 }

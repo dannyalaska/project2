@@ -71,7 +71,7 @@ $(document).keypress(function(event){
 
 var drumstick = function(){
   var hit = document.getElementById("snares").value;
-  play = new Audio(hit);  
+  play = new Audio(hit);
   play.play();
   $("body").css("background-color", "#e74c3c")
 };
