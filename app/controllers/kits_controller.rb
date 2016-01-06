@@ -23,4 +23,3 @@ class KitsController < ApplicationController
     params.require(:kit).permit(:name, :sound_url)
   end
 end
-end
