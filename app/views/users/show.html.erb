@@ -10,8 +10,8 @@
         <% end %>
       </div>
     </div>
-  <div id="drum-machine" class="container">
-    <div id="buttons1" class="col-s-9">
+  <div id="drum-machine" class="container col-s-6">
+    <div id="buttons1" class="col-s-4">
       <form>
         <button type="button" class="btn" id="snare" value= >SNARE<br>(a)</button>
         <select id ="snares" onchange='drumstick()'><%= options_from_collection_for_select(Drum.all, 'sound_url', 'name') %></select>
@@ -25,7 +25,7 @@
         <select id="hats" onchange='tiss()'> <%= options_from_collection_for_select(Hat.all, 'sound_url', 'name') %></select>
       </form>
     </div>
-    <div id="buttons2" class="col-s-9">
+    <div id="buttons2" class="col-s-4">
       <form>
         <button type="button" class="btn" id="tom">TOM<br>(t) / (y)</button>
         <select id= "toms" onchange='boom()'> <%= options_from_collection_for_select(Tom.all, 'sound_url', 'name') %></select>
@@ -39,7 +39,7 @@
         <select id="bells" onchange='ding()'> <%= options_from_collection_for_select(Bell.all, 'sound_url', 'name') %></select>
       </form>
     </div>
-    <div id="buttons3" class="col-s-9">
+    <div id="buttons3" class="col-s-4">
       <form>
         <button type="button" class="btn" id="ride">RIDE 2<br>(b)</button>
         <select id= "rides"onchange='ping()'> <%= options_from_collection_for_select(Ride.all, 'sound_url', 'name') %></select>

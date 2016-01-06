@@ -1,12 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-body {
-  height: 1000px;
+#main-container {
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background: black;
   background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+}
+body {
+  background-image: url(http://www.naedangerband.co.uk/wp-content/uploads/2015/04/2114923141_skate_music_concert_noise_jpg_10189227.jpg);
 }
 
 #drum-machine{
@@ -31,21 +35,27 @@ body {
   width: 200px;
   border: 10px outset #7B4CFE;
   background-color: #02A8F3;
+  opacity: 0.9;
   border-radius: 12px;
   text-align: center;
 }
 
-.col-s-9 {
+.col-s-4 {
   margin: 5px;
+  margin-left: 20px;
   height: 100%;
   width: 150px;
+  position: relative;
   float: left;
-
 }
-
+.container {
+  overflow: auto;
+  opacity: 0.9;
+}
 .btn {
   background-color: #02A8F3;
   border-color: #717171;
+  opacity: 0.9;
   border-style: outset;
   border-width: 8px;
   height: 150px;
@@ -58,7 +68,7 @@ body {
   border-radius: 12px;
 }
 .btn:hover{
-  background-color: #3E50B4;
+  background-color: rgba(#77e318, 0.82);
 }
 select {
   background-color: #B5B5B5;
